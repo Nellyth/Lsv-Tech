@@ -1,15 +1,8 @@
-vec=[]
-for i in range(1,32):
-    vec.append(i**2)
-print(vec)
-print("")
-
-for i in vec:
-    for j in vec:
-        if 1000-i+j in vec:
-            #print((i+j)+(1000-i+j))
-            if(vec.index(i)+vec.index(j)<32):
-                print(vec.index(i))
-                print(vec.index(j))
-                print(vec.index(i)+vec.index(j))
-                print()
+for i in range(1,1001):
+    for j in range(i+1,1001):
+        for z in range(j+1, 1001):
+            if i**2+j**2==z**2 and i+j+z==1000:
+                print("A: ",i,"B: ",j,"C: ",z)
+                print(i,"+",j,"+",z,"=",i+j+z)
+                print(i**2, "+", j**2, "=", z**2)
+                exit()
