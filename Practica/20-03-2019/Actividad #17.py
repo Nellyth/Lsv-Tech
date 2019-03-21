@@ -1,3 +1,4 @@
+#El Factor Primo Mayot De un Numero x
 num=600851475143
 vec=[]
 inc=1

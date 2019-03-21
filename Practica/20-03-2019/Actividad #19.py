@@ -1,3 +1,4 @@
+#Buscar Un Numero Que Al Dividirlo Del 1 Hasta El 20 No De Resultado
 v=0
 sum=0
 while(True):

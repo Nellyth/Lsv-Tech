@@ -1,3 +1,4 @@
+#Cual Es EL Numero Primo En La Poscicion 10001
 def primo(num):
     if num < 2:
         return False

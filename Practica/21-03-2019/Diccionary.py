@@ -1,3 +1,4 @@
+#Practicando Con Diccionario
 diccionary = {"Nellyth":["Arroyo Marrugo",21],"Ana":["Steel",18],"Juan":["El Pendejo",50]}
 #print("", diccionary["Nellyth"])
 diccionary1={"Nellyth":{"Apellido":"Arroyo Marrugo","Edad":21,"Direccion":"Arjona Bolivar","Email":"nellith25@gmail.com","Telefono":"3005184942"}}

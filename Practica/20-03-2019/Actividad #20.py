@@ -1,3 +1,4 @@
+#Diferencia Entre Una Cuadrado De La Suma - Suma De Cuadrado
 sumC=0
 cuaS=0
 for i in range(1,101):

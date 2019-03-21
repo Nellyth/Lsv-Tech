@@ -1,3 +1,4 @@
+#Encontrar 3 Numeros Que Sumados Den 1000 y a**2+b**2=c**2 donde a<b<c
 for i in range(1,1001):
     for j in range(i+1,1001):
         for z in range(j+1, 1001):

@@ -1,3 +1,4 @@
+#Encuentra la suma de todos los números primos por debajo de dos millones.
 primo=[2,3,5,7]
 def comprobar(num):
     for j in primo:
