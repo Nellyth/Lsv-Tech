@@ -4,7 +4,8 @@ def comprobar(num):
     for j in primo:
         if(num%j!=0):
             if(num/j<j):
-                primo.append(num)
+                if(num>7):
+                    primo.append(num)
                 return True
         else:
             return False
