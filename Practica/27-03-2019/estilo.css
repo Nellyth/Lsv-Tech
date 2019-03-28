@@ -1,0 +1,29 @@
+.padre {
+  /* IMPORTANTE */
+  text-align: center;
+}
+
+.hijo {
+  background-color: gray;
+  padding: 10px;
+  margin: 10px;
+  
+  /* IMPORTANTE */
+  display: inline-block;
+  width: 15%;
+}
+.img{
+    height: 160px;
+}
+h2 {
+    color: #158FFA;
+    border-bottom: 1px solid #CCC;
+    text-align: left;
+    padding-left:2%
+}
+h1 {
+    color: rgb(230, 0, 210);
+    text-align: center;
+    padding-top: 2%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

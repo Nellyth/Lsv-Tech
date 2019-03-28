@@ -90,7 +90,6 @@ class Class_Consultas:
     def Agrupar_Turistas_Sexo_Nacionalidad(self, args):
         temp = {}
         for i in args:
-            count = 0
             vec = []
             if not (i.Nacionalidad in temp.keys()):
                 for j in args:
@@ -114,8 +113,18 @@ class Class_Consultas:
                         print('      {}'.format(Turista_Sexo))
             print()
 
+    def Agrupar_Tours_Por_Agencia(self, Tours,Conductores,Agencia):
+        print('----------------------------------------Agrupacion De Tours Por Agencia----------------------------------------')
+        for i in Agencia:
+            for j in Conductores:
+                if i.Codigo==j.Codigo_Agencia:
+                    for a in Tours:
+                        if j.Codigo==a.Codigo_Conductores:
+                            print('Nombre de la agencia: {}, Destino del Tours: {}'.format(i.Nombre,a.Destino))
+
 
 print()
+
 Data_Agencia = []
 Data_Agencia.append(Class_Agencias('1', 'ThunderBlack', 'Cartagena', ['1']))
 Data_Agencia.append(Class_Agencias('2', 'Pitacus', 'Santa Marta', ['2']))
@@ -129,7 +138,7 @@ Turistas = Data_Turistas
 
 Data_Conductores = []
 Data_Conductores.append(Class_Conductores('1', '1044934747', 'Nellyth', 'Arroyo', 'Male', '21', 'Colombia', '1'))
-Data_Conductores.append(Class_Conductores('2', '30762111', 'Ana', 'Martinez', 'Female', '18', 'Colombia', '1'))
+Data_Conductores.append(Class_Conductores('2', '30762111', 'Ana', 'Martinez', 'Female', '18', 'Colombia', '2'))
 Conductores = Data_Conductores
 
 Data_Tours = []
@@ -144,3 +153,4 @@ data.Agrupado_tour_mes(Tours)
 data.Total_Conductores(Conductores)
 data.Total_Turistas(Turistas)
 data.Agrupar_Turistas_Sexo_Nacionalidad(Turistas)
+data.Agrupar_Tours_Por_Agencia(Tours,Conductores,Agencia)
