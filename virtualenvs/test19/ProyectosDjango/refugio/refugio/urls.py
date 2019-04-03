@@ -16,10 +16,12 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 
+from apps.mascota.views import index
+
 urlpatterns = [
+    url(r'^$', index, name='index'),
     url(r'^admin/', admin.site.urls),
     url(r'^mascota/', include ('apps.mascota.urls', namespace="mascota")),
     url(r'^adopcion/', include ('apps.adopcion.urls', namespace="adopcion")),
-
 
 ]

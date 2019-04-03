@@ -3,8 +3,6 @@ from django import forms
 
 from apps.adopcion.models import Persona, Solicitud
 
-
-
 class PersonaForm(forms.ModelForm):
 
 	class Meta:
